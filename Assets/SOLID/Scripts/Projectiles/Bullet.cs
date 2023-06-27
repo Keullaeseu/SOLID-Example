@@ -5,7 +5,7 @@ namespace SOLID.Scripts.Projectiles
 {
     public class Bullet : Projectile
     {
-        private void Start()
+        private void Awake()
         {
             Destroy(gameObject, ProjectileLifetime);
         }

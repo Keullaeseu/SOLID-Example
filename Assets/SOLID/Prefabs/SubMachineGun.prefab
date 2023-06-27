@@ -111,6 +111,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4323559369629043338}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2162588b0bdaeb746bd8f30733874d07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 759738867013390000}
   m_SourcePrefab: {fileID: 100100000, guid: 2162588b0bdaeb746bd8f30733874d07, type: 3}
 --- !u!4 &4667370988999248512 stripped
 Transform:
@@ -140,3 +144,15 @@ MonoBehaviour:
     type: 3}
   ProjectileSpawnTransform: {fileID: 8551822081613305991}
   ProjectileFireForce: 300
+--- !u!114 &759738867013390000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5444295060020777018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37274204d3149c349b203b73ca151bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
