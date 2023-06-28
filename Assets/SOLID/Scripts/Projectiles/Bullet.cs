@@ -22,6 +22,8 @@ namespace SOLID.Scripts.Projectiles
         private void DisableBullet()
         {
             gameObject.SetActive(false);
+            //  Reset velocity for next usage
+            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
     }
 }

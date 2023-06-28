@@ -32,7 +32,7 @@ namespace SOLID.Scripts.Player
         [Space]
         [Header("UI")]
         [SerializeField]
-        private HealthBar healthBar;
+        private HealthBarController healthBarController = new();
 
         private InputsReader inputReader;
         private Weapon currentWeapon;
@@ -45,7 +45,7 @@ namespace SOLID.Scripts.Player
             gravity.Initialization(_characterController);
             rotation.Initialization(_mainCamera.transform, gameObject.transform);
             movement.Initialization(_mainCamera.transform, _characterController);
-            healthBar.Initialization(_mainCamera.transform, this);
+            healthBarController.Initialization(_mainCamera.transform, this);
 
             //  Set default weapon is pistol
             ChangeWeapon(0);
@@ -87,7 +87,7 @@ namespace SOLID.Scripts.Player
             if (health <= 0)
                 Dead();
 
-            healthBar.UpdateHealthBar();
+            healthBarController.UpdateHealthBar();
         }
 
         public void Dead()

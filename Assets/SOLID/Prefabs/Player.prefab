@@ -149,6 +149,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 6064023932872018975, guid: 8c51080536504cc4690727d5931d748e,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -160,9 +165,9 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1290381466464958584}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8013992888002416658 stripped
+--- !u!114 &1964903036521282495 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9142086281394661482, guid: 8c51080536504cc4690727d5931d748e,
+  m_CorrespondingSourceObject: {fileID: 769244713685074887, guid: 8c51080536504cc4690727d5931d748e,
     type: 3}
   m_PrefabInstance: {fileID: 1290381466464958584}
   m_PrefabAsset: {fileID: 0}
@@ -340,7 +345,8 @@ MonoBehaviour:
     weaponsList:
     - {fileID: 88807141799641518}
     - {fileID: 887296208353468506}
-  healthBar: {fileID: 8013992888002416658}
+  healthBarController:
+    healthBar: {fileID: 1964903036521282495}
 --- !u!4 &7543970193028991175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8909574650145720558, guid: 98241acbd1194054db6aae3351119841,

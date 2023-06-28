@@ -18,11 +18,11 @@ namespace SOLID.Scripts.Objects
         [Space]
         [Header("UI")]
         [SerializeField]
-        private HealthBar healthBar;
+        private HealthBarController healthBarController = new();
 
         public override void Initialization(Camera _mainCamera)
         {
-            healthBar.Initialization(_mainCamera.transform, this);
+            healthBarController.Initialization(_mainCamera.transform, this);
         }
 
         public void TakeDamage(int _damage)
@@ -32,12 +32,12 @@ namespace SOLID.Scripts.Objects
             if (health <= 0)
                 Dead();
 
-            healthBar.UpdateHealthBar();
+            healthBarController.UpdateHealthBar();
         }
 
         public void Dead()
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

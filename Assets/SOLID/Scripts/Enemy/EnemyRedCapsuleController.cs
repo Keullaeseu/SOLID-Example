@@ -24,13 +24,13 @@ namespace SOLID.Scripts.Enemy
         [Space]
         [Header("UI")]
         [SerializeField]
-        private HealthBar healthBar;
+        private HealthBarController healthBarController = new();
 
         private Weapon currentWeapon;
 
         public override void Initialization(Camera _mainCamera)
         {
-            healthBar.Initialization(_mainCamera.transform, this);
+            healthBarController.Initialization(_mainCamera.transform, this);
 
             //  Set default weapon is 0 slot
             ChangeWeapon(0);
@@ -61,7 +61,7 @@ namespace SOLID.Scripts.Enemy
             if (health <= 0)
                 Dead();
 
-            healthBar.UpdateHealthBar();
+            healthBarController.UpdateHealthBar();
         }
 
         public void Dead()
