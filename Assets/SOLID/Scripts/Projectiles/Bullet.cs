@@ -16,14 +16,16 @@ namespace SOLID.Scripts.Projectiles
                 return;
 
             _damageableComponent.TakeDamage(Damage);
-            gameObject.SetActive(false);
+
+            CancelInvoke();
+            DisableBullet();
         }
 
         private void DisableBullet()
         {
-            gameObject.SetActive(false);
             //  Reset velocity for next usage
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            gameObject.SetActive(false);
         }
     }
 }
