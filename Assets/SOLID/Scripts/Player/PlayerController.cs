@@ -27,7 +27,7 @@ namespace SOLID.Scripts.Player
         private PlayerMovement movement = new();
         [Space]
         [SerializeField]
-        private PlayerWeaponsChanger weaponsChanger = new();
+        private WeaponsChanger weaponsChanger = new();
 
         [Space]
         [Header("UI")]

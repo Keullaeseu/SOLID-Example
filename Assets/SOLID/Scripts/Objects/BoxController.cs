@@ -10,9 +10,9 @@ namespace SOLID.Scripts.Objects
         public int MaxHealth => maxHealth;
 
         [Header("Settings")]
-        [SerializeField, Range(0, 100)]
+        [SerializeField, Range(0, 1000)]
         private int health = 50;
-        [SerializeField, Range(1, 100)]
+        [SerializeField, Range(1, 1000)]
         private int maxHealth = 50;
 
         [Space]

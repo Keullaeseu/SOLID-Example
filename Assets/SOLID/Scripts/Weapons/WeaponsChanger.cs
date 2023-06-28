@@ -1,14 +1,15 @@
 using System;
-using System.Collections.Generic;
 using SOLID.Scripts.Interfaces;
-using SOLID.Scripts.Weapons;
+using System.Collections.Generic;
 using UnityEngine;
 
-namespace SOLID.Scripts.Player
+namespace SOLID.Scripts.Weapons
 {
     [Serializable]
-    public class PlayerWeaponsChanger : IWeaponsChanger
+    public class WeaponsChanger : IWeaponsChanger
     {
+        public List<Weapon> WeaponsList => weaponsList;
+
         [SerializeField]
         private List<Weapon> weaponsList = new();
 
@@ -23,6 +24,6 @@ namespace SOLID.Scripts.Player
             return _currentWeapon;
         }
 
-        public Weapon ChangeWeapon(int _weaponIndex) => weaponsList[_weaponIndex];
+        public Weapon ChangeWeapon(int _weaponIndex) => WeaponsList[_weaponIndex];
     }
 }

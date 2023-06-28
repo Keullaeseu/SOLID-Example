@@ -22,9 +22,7 @@ namespace SOLID.Scripts.UI
             healthComponent = _healthComponent;
             healthBar.Initialization(_mainCameraTransform, _healthComponent);
 
-            //  Disable health canvas
-            if (!showHealthPoint)
-                healthBar.gameObject.SetActive(false);
+            UpdateHealthBar();
         }
 
         public void UpdateHealthBar()

@@ -19,7 +19,7 @@ namespace SOLID.Scripts.Enemy
         private int maxHealth = 100;
 
         [SerializeField]
-        private PlayerWeaponsChanger weaponsChanger = new();
+        private WeaponsChanger weaponsChanger = new();
 
         [Space]
         [Header("UI")]
