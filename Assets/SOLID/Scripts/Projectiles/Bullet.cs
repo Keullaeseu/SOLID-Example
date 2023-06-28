@@ -5,9 +5,9 @@ namespace SOLID.Scripts.Projectiles
 {
     public class Bullet : Projectile
     {
-        private void Awake()
+        public void StartBulletLifetime()
         {
-            Destroy(gameObject, ProjectileLifetime);
+            Invoke(nameof(DisableBullet), ProjectileLifetime);
         }
 
         public override void OnCollisionEnter(Collision _collision)
@@ -16,7 +16,12 @@ namespace SOLID.Scripts.Projectiles
                 return;
 
             _damageableComponent.TakeDamage(Damage);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+        }
+
+        private void DisableBullet()
+        {
+            gameObject.SetActive(false);
         }
     }
 }

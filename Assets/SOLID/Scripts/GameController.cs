@@ -12,6 +12,8 @@ namespace SOLID.Scripts
         [SerializeField]
         private Camera mainCamera;
         [SerializeField]
+        private BulletsPoolController bulletsPoolController;
+        [SerializeField]
         private PlayerController playerController;
 
         [SerializeField]
@@ -51,9 +53,17 @@ namespace SOLID.Scripts
         /// </summary>
         private void Initialization()
         {
+            PoolInitialization();
             PlayerInitialization();
             EnemiesInitialization();
             ObjectsInitialization();
+        }
+
+        #region Initialization
+
+        private void PoolInitialization()
+        {
+            bulletsPoolController.Initialization();
         }
 
         private void PlayerInitialization()
@@ -77,5 +87,8 @@ namespace SOLID.Scripts
                 _miscObject.Initialization(mainCamera);
             }
         }
+
+        #endregion
+
     }
 }

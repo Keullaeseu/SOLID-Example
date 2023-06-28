@@ -47,7 +47,7 @@ namespace SOLID.Scripts.Enemy
         {
             while (true)
             {
-                yield return new WaitForSeconds(Random.Range(1, 3));
+                yield return new WaitForSeconds(Random.Range(.2f, 1));
 
                 if (currentWeapon.TryGetComponent(out IFire _fireComponent))
                     _fireComponent.Fire();

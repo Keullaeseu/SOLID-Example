@@ -228,7 +228,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -313,7 +313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &144143383
 RectTransform:
   m_ObjectHideFlags: 0
@@ -720,6 +720,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5378312520941891554, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
+      propertyPath: weaponsChanger.weaponsList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5378312520941891554, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[0]
       value: 
       objectReference: {fileID: 453403142}
@@ -727,11 +732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[1]
       value: 
-      objectReference: {fileID: 453403141}
+      objectReference: {fileID: 0}
     - target: {fileID: 115295362262044307, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 115295362262044307, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
@@ -788,23 +793,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1497443730383138754, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
+    - target: {fileID: 2986551072306525254, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6004204242849141824, guid: 672a3599c2c86224da9116acae485df5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672a3599c2c86224da9116acae485df5, type: 3}
---- !u!114 &453403141 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2986551072306525254, guid: 672a3599c2c86224da9116acae485df5,
-    type: 3}
-  m_PrefabInstance: {fileID: 453403140}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d60960c0b3fa504faef2b29d36340e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &453403142 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1497443730383138754, guid: 672a3599c2c86224da9116acae485df5,
@@ -836,7 +840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &463410537
 RectTransform:
   m_ObjectHideFlags: 0
@@ -853,10 +857,10 @@ RectTransform:
   m_Father: {fileID: 859345559}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7957386, y: 0.90310663}
-  m_AnchorMax: {x: 1, y: 0.9758427}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -225, y: -40}
+  m_SizeDelta: {x: 450, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463410538
 MonoBehaviour:
@@ -1048,7 +1052,7 @@ RectTransform:
   m_Children:
   - {fileID: 831986075}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1140,7 +1144,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 109.65
+  m_fontSize: 138.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1190,6 +1194,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512639585}
   m_CullTransparentMesh: 1
+--- !u!1 &554688559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554688560}
+  m_Layer: 0
+  m_Name: Bullets Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &554688560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554688559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &561700498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1206,7 +1241,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -1291,7 +1326,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -1480,6 +1515,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 88807141799641518, guid: 62b3681f80f8ed144a0a5c41b4689f65,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
+    - target: {fileID: 887296208353468506, guid: 62b3681f80f8ed144a0a5c41b4689f65,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     - target: {fileID: 4729846705155264757, guid: 62b3681f80f8ed144a0a5c41b4689f65,
         type: 3}
       propertyPath: weaponsChanger.pistol
@@ -1498,7 +1543,7 @@ PrefabInstance:
     - target: {fileID: 7543970193028991175, guid: 62b3681f80f8ed144a0a5c41b4689f65,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7543970193028991175, guid: 62b3681f80f8ed144a0a5c41b4689f65,
         type: 3}
@@ -1689,7 +1734,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -2038,7 +2083,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -2289,6 +2334,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5378312520941891554, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
+      propertyPath: weaponsChanger.weaponsList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5378312520941891554, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[0]
       value: 
       objectReference: {fileID: 988380577}
@@ -2296,11 +2346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[1]
       value: 
-      objectReference: {fileID: 988380576}
+      objectReference: {fileID: 0}
     - target: {fileID: 115295362262044307, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 115295362262044307, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
@@ -2357,23 +2407,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1497443730383138754, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6004204242849141824, guid: 672a3599c2c86224da9116acae485df5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672a3599c2c86224da9116acae485df5, type: 3}
---- !u!114 &988380576 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2986551072306525254, guid: 672a3599c2c86224da9116acae485df5,
-    type: 3}
-  m_PrefabInstance: {fileID: 988380575}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d60960c0b3fa504faef2b29d36340e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &988380577 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1497443730383138754, guid: 672a3599c2c86224da9116acae485df5,
@@ -2394,10 +2438,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5378312520941891554, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: weaponsChanger.weaponsList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 115295362262044307, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 115295362262044307, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
@@ -2454,8 +2503,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2986551072306525254, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7154433060365251954, guid: 672a3599c2c86224da9116acae485df5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672a3599c2c86224da9116acae485df5, type: 3}
@@ -2475,7 +2530,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -3085,7 +3140,7 @@ Transform:
   - {fileID: 1994408720}
   - {fileID: 1649921596}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1387460533
 PrefabInstance:
@@ -3103,7 +3158,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -3193,7 +3248,7 @@ PrefabInstance:
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4184947781306522030, guid: 4efbe9df36b95e246a60093bed7a06b7,
         type: 3}
@@ -3571,8 +3626,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -300, y: 150}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: -300, y: 200}
+  m_SizeDelta: {x: 250, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1775138187
 MonoBehaviour:
@@ -3672,6 +3727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputsReader: {fileID: 774152702}
   mainCamera: {fileID: 961739752}
+  bulletsPoolController: {fileID: 1776465097}
   playerController: {fileID: 1694053656}
   enemiesArray:
   - {fileID: 808852374}
@@ -3695,9 +3751,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776465094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7804a414ce69e5b4d813e9746ec96759, type: 3}
+  m_Script: {fileID: 11500000, guid: eaf63f4c1ccc9544ab2671f7650dee99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6112226737767296786, guid: d1d93f0628acadb498c7b0d8fda0a74f,
+    type: 3}
+  poolSize: 100
 --- !u!114 &1860691330 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7501913013668178582, guid: 4efbe9df36b95e246a60093bed7a06b7,
@@ -3800,7 +3859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -365, y: 355}
+  m_AnchoredPosition: {x: -365, y: 400}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998189515
@@ -3939,7 +3998,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.3
+  m_fontSize: 71.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4026,7 +4085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -215, y: 355}
+  m_AnchoredPosition: {x: -215, y: 400}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2066784472
