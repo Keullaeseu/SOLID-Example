@@ -737,7 +737,7 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[0]
       value: 
-      objectReference: {fileID: 453403142}
+      objectReference: {fileID: 453403141}
     - target: {fileID: -5378312520941891554, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[1]
@@ -813,15 +813,21 @@ PrefabInstance:
       propertyPath: bulletsPoolController
       value: 
       objectReference: {fileID: 1776465097}
+    - target: {fileID: 7661081717436771644, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6004204242849141824, guid: 672a3599c2c86224da9116acae485df5, type: 3}
+    - {fileID: 6618280719688363163, guid: 672a3599c2c86224da9116acae485df5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672a3599c2c86224da9116acae485df5, type: 3}
---- !u!114 &453403142 stripped
+--- !u!114 &453403141 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1497443730383138754, guid: 672a3599c2c86224da9116acae485df5,
+  m_CorrespondingSourceObject: {fileID: 7661081717436771644, guid: 672a3599c2c86224da9116acae485df5,
     type: 3}
   m_PrefabInstance: {fileID: 453403140}
   m_PrefabAsset: {fileID: 0}
@@ -1504,16 +1510,21 @@ PrefabInstance:
       propertyPath: bulletsPoolController
       value: 
       objectReference: {fileID: 1776465097}
+    - target: {fileID: 3040717726934479915, guid: 62b3681f80f8ed144a0a5c41b4689f65,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     - target: {fileID: 4729846705155264757, guid: 62b3681f80f8ed144a0a5c41b4689f65,
         type: 3}
       propertyPath: weaponsChanger.pistol
       value: 
-      objectReference: {fileID: 737928226}
+      objectReference: {fileID: 0}
     - target: {fileID: 4729846705155264757, guid: 62b3681f80f8ed144a0a5c41b4689f65,
         type: 3}
       propertyPath: weaponsChanger.subMachineGun
       value: 
-      objectReference: {fileID: 737928227}
+      objectReference: {fileID: 0}
     - target: {fileID: 7454739600116819319, guid: 62b3681f80f8ed144a0a5c41b4689f65,
         type: 3}
       propertyPath: m_Name
@@ -1574,6 +1585,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8659732866976604927, guid: 62b3681f80f8ed144a0a5c41b4689f65,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     - target: {fileID: 8870659761808515496, guid: 62b3681f80f8ed144a0a5c41b4689f65,
         type: 3}
       propertyPath: m_IsActive
@@ -1589,30 +1605,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62b3681f80f8ed144a0a5c41b4689f65, type: 3}
---- !u!114 &737928226 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 88807141799641518, guid: 62b3681f80f8ed144a0a5c41b4689f65,
-    type: 3}
-  m_PrefabInstance: {fileID: 737928225}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d60960c0b3fa504faef2b29d36340e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &737928227 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 887296208353468506, guid: 62b3681f80f8ed144a0a5c41b4689f65,
-    type: 3}
-  m_PrefabInstance: {fileID: 737928225}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a771c429e9694843a4f0a2566ea2cea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &737928228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9114859485086423906, guid: 62b3681f80f8ed144a0a5c41b4689f65,
@@ -2340,7 +2332,7 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[0]
       value: 
-      objectReference: {fileID: 988380577}
+      objectReference: {fileID: 988380576}
     - target: {fileID: -5378312520941891554, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
       propertyPath: weaponsChanger.weaponsList.Array.data[1]
@@ -2411,15 +2403,21 @@ PrefabInstance:
       propertyPath: bulletsPoolController
       value: 
       objectReference: {fileID: 1776465097}
+    - target: {fileID: 7661081717436771644, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6004204242849141824, guid: 672a3599c2c86224da9116acae485df5, type: 3}
+    - {fileID: 6618280719688363163, guid: 672a3599c2c86224da9116acae485df5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672a3599c2c86224da9116acae485df5, type: 3}
---- !u!114 &988380577 stripped
+--- !u!114 &988380576 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1497443730383138754, guid: 672a3599c2c86224da9116acae485df5,
+  m_CorrespondingSourceObject: {fileID: 7661081717436771644, guid: 672a3599c2c86224da9116acae485df5,
     type: 3}
   m_PrefabInstance: {fileID: 988380575}
   m_PrefabAsset: {fileID: 0}
@@ -2497,6 +2495,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 117665401476444124, guid: 672a3599c2c86224da9116acae485df5,
+        type: 3}
+      propertyPath: bulletsPoolController
+      value: 
+      objectReference: {fileID: 1776465097}
     - target: {fileID: 1034845249505190691, guid: 672a3599c2c86224da9116acae485df5,
         type: 3}
       propertyPath: m_Name
@@ -2510,6 +2513,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7154433060365251954, guid: 672a3599c2c86224da9116acae485df5, type: 3}
+    - {fileID: 747131239525305247, guid: 672a3599c2c86224da9116acae485df5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 672a3599c2c86224da9116acae485df5, type: 3}
